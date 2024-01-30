@@ -31,11 +31,16 @@ class Game {
                 return 80;
             }
         }
+        public function getGeneriAsString(){
+    return implode(", ", $this->genere);
 }
 
-$game_1 = new Game('Final Fantasy X', 'JRPG', "Square-Soft", "2002", "Playstation 2", $prezzo_medio);
-$game_2 = new Game('Final Fantasy XVI', 'Action', "Square-Enix", "2023", "Playstation 5", $prezzo_medio);
-$game_3 = new Game('The Last of Us Parte II', 'Survivial/Horror', "Naughty Dog", "2020", "Playstation 4", $prezzo_medio);
+}
+
+
+$game_1 = new Game('Final Fantasy X', ['JRPG', "A Turni"], "Square-Soft", "2002", "Playstation 2", $prezzo_medio);
+$game_2 = new Game('Final Fantasy XVI', ['JRPG', 'Action'], "Square-Enix", "2023", "Playstation 5", $prezzo_medio);
+$game_3 = new Game('The Last of Us Parte II', ['Adventure', 'TPS', 'Stealth', 'Survivial/Horror'], "Naughty Dog", "2020", "Playstation 4", $prezzo_medio);
 
 
 ?>
@@ -54,15 +59,15 @@ $game_3 = new Game('The Last of Us Parte II', 'Survivial/Horror', "Naughty Dog",
     <div class="container">
         <div class="row">
             <div class="col-12 m-5">
-                <div class="my-2"><?php echo $game_1->nome. " è un videogioco ". $game_1->genere. " sviluppato da ". $game_1->software_house. 
+                <div class="my-2"><?php echo $game_1->nome. " è un videogioco ". $game_1->getGeneriAsString(). " sviluppato da ". $game_1->software_house. 
                 " e pubblicato nel ". $game_1->data. " per console ". $game_1->console. 
                 " al momento si trova in commercio ad un prezzo medio di ". $game_1->prezzo_medio. " euro. <br>"  ?>
                 </div>
-                <div class="my-2"><?php echo $game_2->nome. " è un videogioco ". $game_2->genere. " sviluppato da ". $game_2->software_house. 
+                <div class="my-2"><?php echo $game_2->nome. " è un videogioco ". $game_2->getGeneriAsString(). " sviluppato da ". $game_2->software_house. 
                 " e pubblicato nel ". $game_2->data. " per console ". $game_2->console. 
                 " al momento si trova in commercio ad un prezzo medio di ". $game_2->prezzo_medio. " euro. <br>"  ?>
                 </div>
-                <div class="my-2"><?php echo $game_3->nome. " è un videogioco ". $game_3->genere. " sviluppato da ". $game_3->software_house. 
+                <div class="my-2"><?php echo $game_3->nome. " è un videogioco ". $game_3->getGeneriAsString(). " sviluppato da ". $game_3->software_house. 
                 " e pubblicato nel ". $game_3->data. " per console ". $game_3->console. 
                 " al momento si trova in commercio ad un prezzo medio di ". $game_3->prezzo_medio. " euro. <br>"  ?>
                 </div>
