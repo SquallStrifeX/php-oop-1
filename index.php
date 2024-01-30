@@ -41,8 +41,8 @@ class Game {
 $game_1 = new Game('Final Fantasy X', ['JRPG', "A Turni"], "Square-Soft", "2002", "Playstation 2", $prezzo_medio);
 $game_2 = new Game('Final Fantasy XVI', ['JRPG', 'Action'], "Square-Enix", "2023", "Playstation 5", $prezzo_medio);
 $game_3 = new Game('The Last of Us Parte II', ['Adventure', 'TPS', 'Stealth', 'Survivial/Horror'], "Naughty Dog", "2020", "Playstation 4", $prezzo_medio);
-
-
+$game_4 = new Game('Marvels Spider-Man 2', ['Action', 'Open-World'], 'Insomniac', '2023', "Playstation 5", $prezzo_medio );
+$game_5 = new Game('God of War', ['Action', 'RPG'], "Santa Monica Studios", "2018", "PLaystation 4", $prezzo_medio);
 ?>
 
 
@@ -59,19 +59,26 @@ $game_3 = new Game('The Last of Us Parte II', ['Adventure', 'TPS', 'Stealth', 'S
     <div class="container">
         <div class="row">
             <div class="col-12 m-5">
-                <div class="my-2"><?php echo $game_1->nome. " è un videogioco ". $game_1->getGeneriAsString(). " sviluppato da ". $game_1->software_house. 
+                <div class="my-2 border border-info p-2"><?php echo $game_1->nome. " è un videogioco ". $game_1->getGeneriAsString(). " sviluppato da ". $game_1->software_house. 
                 " e pubblicato nel ". $game_1->data. " per console ". $game_1->console. 
                 " al momento si trova in commercio ad un prezzo medio di ". $game_1->prezzo_medio. " euro. <br>"  ?>
                 </div>
-                <div class="my-2"><?php echo $game_2->nome. " è un videogioco ". $game_2->getGeneriAsString(). " sviluppato da ". $game_2->software_house. 
+                <div class="my-2 border border-info p-2"><?php echo $game_2->nome. " è un videogioco ". $game_2->getGeneriAsString(). " sviluppato da ". $game_2->software_house. 
                 " e pubblicato nel ". $game_2->data. " per console ". $game_2->console. 
                 " al momento si trova in commercio ad un prezzo medio di ". $game_2->prezzo_medio. " euro. <br>"  ?>
                 </div>
-                <div class="my-2"><?php echo $game_3->nome. " è un videogioco ". $game_3->getGeneriAsString(). " sviluppato da ". $game_3->software_house. 
+                <div class="my-2 border border-info p-2"><?php echo $game_3->nome. " è un videogioco ". $game_3->getGeneriAsString(). " sviluppato da ". $game_3->software_house. 
                 " e pubblicato nel ". $game_3->data. " per console ". $game_3->console. 
                 " al momento si trova in commercio ad un prezzo medio di ". $game_3->prezzo_medio. " euro. <br>"  ?>
                 </div>
-               
+                <div class="my-2 border border-info p-2"><?php echo $game_4->nome. " è un videogioco ". $game_4->getGeneriAsString(). " sviluppato da ". $game_4->software_house. 
+                " e pubblicato nel ". $game_4->data. " per console ". $game_4->console. 
+                " al momento si trova in commercio ad un prezzo medio di ". $game_4->prezzo_medio. " euro. <br>"  ?>
+                </div>
+                <div class="my-2 border border-info p-2"><?php echo $game_5->nome. " è un videogioco ". $game_5->getGeneriAsString(). " sviluppato da ". $game_5->software_house. 
+                " e pubblicato nel ". $game_5->data. " per console ". $game_5->console. 
+                " al momento si trova in commercio ad un prezzo medio di ". $game_5->prezzo_medio. " euro. <br>"  ?>
+                </div>
                 
             </div>
         </div>
